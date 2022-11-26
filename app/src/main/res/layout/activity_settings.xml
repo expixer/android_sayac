@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C27B0"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_ustLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Üst Limit Ayarları"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.123" />
+
+            <EditText
+                android:id="@+id/etn_ustLimit"
+                android:layout_width="108dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ustLimit"
+                app:layout_constraintVertical_bias="0.193" />
+
+            <Button
+                android:id="@+id/btn_ust_limit_azalt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sınır Azalt"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/etn_ustLimit"
+                app:layout_constraintEnd_toStartOf="@+id/etn_ustLimit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/etn_ustLimit" />
+
+            <Button
+                android:id="@+id/btn_ust_limit_arttir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sınır Arttır"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/etn_ustLimit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/etn_ustLimit"
+                app:layout_constraintTop_toTopOf="@+id/etn_ustLimit" />
+
+            <CheckBox
+                android:id="@+id/cb_ust_limit_titresim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="Titreşim Uyarısı"
+                app:layout_constraintEnd_toEndOf="@+id/etn_ustLimit"
+                app:layout_constraintStart_toStartOf="@+id/etn_ustLimit"
+                app:layout_constraintTop_toBottomOf="@+id/etn_ustLimit" />
+
+            <CheckBox
+                android:id="@+id/cb_ust_limit_sesli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sesli Uyarı"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/cb_ust_limit_titresim"
+                app:layout_constraintStart_toStartOf="@+id/cb_ust_limit_titresim"
+                app:layout_constraintTop_toBottomOf="@+id/cb_ust_limit_titresim"
+                app:layout_constraintVertical_bias="0.3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_altLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alt Limit Ayarları"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.123" />
+
+            <EditText
+                android:id="@+id/etn_altLimit"
+                android:layout_width="108dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_altLimit"
+                app:layout_constraintVertical_bias="0.193" />
+
+            <Button
+                android:id="@+id/btn_alt_limit_azalt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sınır Azalt"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/etn_altLimit"
+                app:layout_constraintEnd_toStartOf="@+id/etn_altLimit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/etn_altLimit" />
+
+            <Button
+                android:id="@+id/btn_alt_limit_arttir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sınır Arttır"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/etn_altLimit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/etn_altLimit"
+                app:layout_constraintTop_toTopOf="@+id/etn_altLimit" />
+
+            <CheckBox
+                android:id="@+id/cb_alt_limit_titresim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="Titreşim Uyarısı"
+                app:layout_constraintEnd_toEndOf="@+id/etn_altLimit"
+                app:layout_constraintStart_toStartOf="@+id/etn_altLimit"
+                app:layout_constraintTop_toBottomOf="@+id/etn_altLimit" />
+
+            <CheckBox
+                android:id="@+id/cb_alt_limit_sesli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sesli Uyarı"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/cb_alt_limit_titresim"
+                app:layout_constraintStart_toStartOf="@+id/cb_alt_limit_titresim"
+                app:layout_constraintTop_toBottomOf="@+id/cb_alt_limit_titresim"
+                app:layout_constraintVertical_bias="0.3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
